@@ -1,9 +1,12 @@
 package com.corangedigital.myappportfolio;
 
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 
 public class MyAppPortfolioMainActivity extends ActionBarActivity {
@@ -34,5 +37,46 @@ public class MyAppPortfolioMainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void cook(String myToast, View view){
+        Context context = view.getContext();
+        int duration = Toast.LENGTH_SHORT;
+        myToast = getString(R.string.toast_base_message) + myToast;
+        Toast toast = Toast.makeText(context, myToast, duration);
+        toast.show();
+    }
+
+    public void spotifyStreamer(View view) {
+        String myToast = getString(R.string.button_1);
+        cook(myToast, view);
+    }
+
+    public void scoresApp(View view) {
+        String myToast = getString(R.string.button_2);
+        cook(myToast, view);
+
+    }
+    public void libraryApp(View view) {
+        String myToast = getString(R.string.button_3);
+        cook(myToast, view);
+
+    }
+
+    public void buildItBigger(View view) {
+        String myToast = getString(R.string.button_4);
+        cook(myToast, view);
+    }
+
+    public void xyzReader(View view) {
+        String myToast = getString(R.string.button_5);
+        cook(myToast, view);
+
+    }
+
+    public void capStoneProject(View view) {
+        String myToast = getString(R.string.button_6);
+        cook(myToast, view);
+
     }
 }
