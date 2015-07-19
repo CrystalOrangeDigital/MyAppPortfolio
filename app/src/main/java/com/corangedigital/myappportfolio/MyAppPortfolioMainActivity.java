@@ -15,6 +15,7 @@ public class MyAppPortfolioMainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_app_portfolio_main);
+        getWindow().setBackgroundDrawable(null);
     }
 
     @Override
