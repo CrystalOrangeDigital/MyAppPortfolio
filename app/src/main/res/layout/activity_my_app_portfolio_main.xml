@@ -1,12 +1,88 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefefefe"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".MyAppPortfolioMainActivity">
+    tools:context=".MainActivityFragment">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_view_height"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/button_vertical_margin"
+        android:background="@drawable/button_orange_borders"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:onClick="spotifyStreamer"
+        android:text="@string/button_1" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/button_vertical_margin"
+        android:background="@drawable/button_orange_borders"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:onClick="scoresApp"
+        android:text="@string/button_2" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/button_vertical_margin"
+        android:background="@drawable/button_orange_borders"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:onClick="libraryApp"
+        android:text="@string/button_3" />
+
+    <Button
+        android:id="@+id/button_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/button_vertical_margin"
+        android:background="@drawable/button_orange_borders"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:onClick="buildItBigger"
+        android:text="@string/button_4" />
+
+    <Button
+        android:id="@+id/button_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/button_vertical_margin"
+        android:background="@drawable/button_orange_borders"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:onClick="xyzReader"
+        android:text="@string/button_5" />
+
+    <Button
+        android:id="@+id/button_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/button_vertical_margin"
+        android:background="@drawable/button_orange_gradient"
+        android:onClick="capStoneProject"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="@string/button_6" />
+</LinearLayout>
