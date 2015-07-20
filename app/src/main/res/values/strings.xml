@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">MyAppPortfolio</string>
-    <string name="action_settings">Settings</string>
 
     <!-- Title of the view -->
     <string name="title">My Nanodegree Apps!</string>
