@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import java.util.jar.JarEntry;
+
 
 public class MyAppPortfolioMainActivity extends ActionBarActivity {
 
@@ -41,12 +43,18 @@ public class MyAppPortfolioMainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    private Toast T;
+
     private void cook(String myToast, View view){
-        Context context = view.getContext();
-        int duration = Toast.LENGTH_SHORT;
+
+        int duration = Toast.LENGTH_LONG;
         myToast = getString(R.string.toast_base_message) + myToast;
-        Toast toast = Toast.makeText(context, myToast, duration);
-        toast.show();
+
+        if (T != null) {
+            T.cancel();
+        }
+        T = Toast.makeText(this, myToast, duration);
+        T.show();
     }
 
     public void spotifyStreamer(View view) {
